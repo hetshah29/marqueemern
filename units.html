@@ -1,47 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box Sizing Example</title>
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        #container{
-            margin: 100px;
-            width: 100px;
-            height: 100px;
-            background-color: aquamarine;
+      #container {
+        margin: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
 
-            font-size: 3em;
+        font-size: 3em;
 
-            /* Default */
-            box-sizing: content-box;
+        /* Default */
+        box-sizing: content-box;
 
-            padding: 10px;
-            border: 2px solid red;
-        }
+        padding: 10px;
+        border: 2px solid red;
+      }
 
-        #child{
-            background-color: yellow;
-            padding: 5px;
-            border: 1px solid black;
-        }
+      #child {
+        background-color: yellow;
+        padding: 5px;
+        border: 1px solid black;
+      }
     </style>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="container">
-        <div id="child">
-            <p>Hello</p>
-        </div>
+      <div id="child">
+        <p>Hello</p>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

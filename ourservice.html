@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <style>
+    /* Reset basic elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333333;
+      padding: 60px 20px;
+    }
+
+    /* Section Container */
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Section Heading */
+    .services-title {
+      font-size: 2.5rem;
+      color: #0b2545; /* Deep corporate blue */
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    /* CSS Grid Layout - Main Topic Used */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Exactly 3 equal columns */
+      gap: 30px; /* Perfect spacing between cards */
+    }
+
+    /* Individual Card Layout */
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: left;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      transition: all 0.3s ease;
+    }
+
+    /* Interactive Hover Effect */
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(11, 37, 69, 0.1);
+      border-color: #134074;
+    }
+
+    /* Icon Container using Flexbox */
+    .icon-box {
+      width: 55px;
+      height: 55px;
+      background-color: #eef4f8;
+      color: #134074;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    /* Card Typography */
+    .service-card h3 {
+      font-size: 1.25rem;
+      color: #0b2545;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .service-card p {
+      color: #6c757d;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design / Media Queries */
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Drops to 2 columns on tablets */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr; /* Drops to 1 column on mobile screens */
+      }
+      .services-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="services-container">
+    <h2 class="services-title">Our Services</h2>
+    
+    <div class="services-grid">
+      
+      <div class="service-card">
+        <div class="icon-box">⚙️</div>
+        <h3>Manual Testing</h3>
+        <p>Comprehensive manual testing to ensure your software functions precisely as intended under real-world scenarios.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">🤖</div>
+        <h3>Automated Testing</h3>
+        <p>Speed up release cycles and eliminate human error by building robust, repeatable automated test suites.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">🔌</div>
+        <h3>API Testing</h3>
+        <p>Thorough verification of backend services, ensuring seamless integration, data integrity, and secure endpoints.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">📱</div>
+        <h3>Mobile Testing</h3>
+        <p>Optimizing performance, UI responsiveness, and functional stability across various iOS and Android devices.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">🔒</div>
+        <h3>Security Testing</h3>
+        <p>Identifying potential system vulnerabilities, data leaks, and threats to keep your application highly protected.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">👤</div>
+        <h3>Usability Testing</h3>
+        <p>Evaluating the user experience and interface intuitive flows to make sure it completely meets user expectations.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">⚡</div>
+        <h3>Performance Testing</h3>
+        <p>Stress-testing applications to maintain speed, responsiveness, and absolute stability under heavy user traffic load.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">♿</div>
+        <h3>Accessibility Testing</h3>
+        <p>Ensuring your software is completely usable and compliant for individuals with disabilities (WCAG guidelines).</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-box">👁️</div>
+        <h3>Visual Testing</h3>
+        <p>Verifying layout consistency and preventing accidental UI regressions across multiple browser updates.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

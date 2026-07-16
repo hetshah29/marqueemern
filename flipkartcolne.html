@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Header</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      /* ==========================
+           Reset
+        ========================== */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f1f3f6;
+      }
+
+      /* ==========================
+           Header
+        ========================== */
+
+      header {
+        width: 85vw;
+        margin: 20px auto;
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 8px;
+      }
+
+      /* ==========================
+           Top Navigation
+        ========================== */
+
+      #header-top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      #header-top-nav-left {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .flipkart-yellow {
+        background: #ffc200;
+      }
+
+      .travel-white {
+        background: #f0f5ff;
+      }
+
+      /* ==========================
+           Location
+        ========================== */
+
+      #header-top-nav-right {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .delivery-label {
+        font-size: 11px;
+        color: #777;
+      }
+
+      .city-name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      /* ==========================
+           Search Bar
+        ========================== */
+
+      .search-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        background: #f0f5ff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .search-container input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 0 15px;
+        font-size: 15px;
+      }
+
+      .search-btn {
+        width: 55px;
+        height: 100%;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      .search-btn {
+        width: 55px;
+        height: 100%;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      /* ==========================
+   Categories
+========================== */
+
+      #categories {
+        width: 85vw;
+        margin: 20px auto;
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 8px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .category {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .category img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        margin-bottom: 8px;
+      }
+
+      .category span {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="header-top-nav">
+        <div id="header-top-nav-left">
+          <button class="nav-btn flipkart-yellow">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Flipkart
+          </button>
+
+          <button class="nav-btn travel-white">
+            <i class="fa-solid fa-plane"></i>
+            Travel
+          </button>
+        </div>
+
+        <div id="header-top-nav-right">
+          <span class="delivery-label"> Delivering to </span>
+
+          <span class="city-name"> Mumbai 400001 </span>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <input type="text" placeholder="Search for Products, Brands and More" />
+
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </header>
+
+    <section id="categories">
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/all.svg"
+          alt="For You"
+        />
+        <span>For You</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/fashion.svg"
+          alt="Fashion"
+        />
+        <span>Fashion</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/mobiles.svg"
+          alt="Mobiles"
+        />
+        <span>Mobiles</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/electronics.svg"
+          alt="Electronics"
+        />
+        <span>Electronics</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/home-final.svg"
+          alt="Home"
+        />
+        <span>Home</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg"
+          alt="Appliances"
+        />
+        <span>Appliances</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/auto-new.svg"
+          alt="Travel"
+        />
+        <span>Travel</span>
+      </div>
+
+      <div class="category">
+        <img
+          src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/toy.svg"
+          alt="Beauty"
+        />
+        <span>Beauty, Toys & More</span>
+      </div>
+    </section>
+  </body>
+</html>
